@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  price_per_unit REAL NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  product_name TEXT NOT NULL,
+  quantity INTEGER NOT NULL,
+  buyer_name TEXT NOT NULL,
+  delivery_address TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'Pending'
+);
