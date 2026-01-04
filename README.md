@@ -1,57 +1,75 @@
-# 🥕🥦 Bulk Vegetable & Fruit Ordering Platform
+# 🥕 Bulk Vegetable & Fruit Ordering Platform
 
-A simple full-stack web application that allows users to place **bulk vegetable and fruit orders** and enables admins to **manage and update order statuses**.
+## 📌 Objective
+This project is a simple full-stack web application that allows users to browse vegetables/fruits and place bulk orders, while admins can view all orders and update their delivery status.
 
-This project is designed for learning and demonstrating **frontend + backend integration**, REST APIs, and basic order management workflows.
+The application demonstrates a complete buyer flow and basic admin operations using a React frontend, Node.js backend, and SQLite database.
 
 ---
 
-## 🚀 Features
+## 🚀 Features Implemented
 
 ### 👤 Buyer Features
-- Browse available vegetables and fruits
-- Place bulk orders by providing:
+
+#### 1. Browse Vegetables/Fruits
+- Displays a product catalogue with:
   - Product name
-  - Quantity
-  - Buyer name
-  - Delivery address
-- Track order status using **Order ID**
-- Order status values:
+  - Price per unit
+- Products are fetched from the backend API
+
+#### 2. Place Bulk Orders
+Buyers can place an order by providing:
+- Vegetable/Fruit name
+- Quantity
+- Buyer name
+- Delivery address
+
+Each order is saved in the database with:
+- Unique Order ID
+- Order status (default: **Pending**)
+
+#### 3. Order Tracking
+- Buyers can track their order using the **Order ID**
+- Displays current order status:
   - `Pending`
   - `Delivered`
 
 ---
 
 ### 🛠 Admin Features
-- View all placed orders
-- See:
+
+#### 1. Order Management
+- View a list of all placed orders with:
   - Buyer name
   - Product name
   - Quantity
-  - Address
-  - Order status
-- Update order status from **Pending → Delivered**
-- Admin access via a separate page/route (no authentication)
+  - Delivery address
+  - Current order status
+
+#### 2. Update Order Status
+- Admin can update order status:
+  - `Pending → Delivered`
+
+> 🔔 Note:  
+> No authentication is implemented. Admin access is provided through a separate route/page as per requirements.
 
 ---
 
 ## 🧑‍💻 Tech Stack
 
 ### Frontend
-- HTML  
-- CSS  
-- JavaScript  
+- React.js
+- HTML, CSS
+- Axios for API communication
 
 ### Backend
-- Python
-- Flask (REST API)
+- Node.js
+- Express.js
 
 ### Database
-- SQLite (lightweight local database)
+- SQLite (local file database)
 
 ---
 
 ## 📂 Project Structure
-
-
 
