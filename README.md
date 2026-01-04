@@ -72,4 +72,51 @@ Each order is saved in the database with:
 ---
 
 ## 📂 Project Structure
+Bulk-Vegitable-Fruits-Order/
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── App.js
+│ │ └── index.js
+│ ├── package.json
+│ └── public/
+│
+├── backend/
+│ ├── routes/
+│ ├── controllers/
+│ ├── database.sqlite
+│ ├── server.js
+│ └── package.json
+│
+├── README.md
+└── .gitignore
+
+
+---
+
+## 🔗 API Endpoints
+
+### Product APIs
+| Method | Endpoint | Description |
+|------|---------|------------|
+| GET | `/api/products` | Fetch product list |
+
+### Order APIs
+| Method | Endpoint | Description |
+|------|---------|------------|
+| POST | `/api/orders` | Place a new order |
+| GET | `/api/orders/:id` | Fetch order status by Order ID |
+
+### Admin APIs
+| Method | Endpoint | Description |
+|------|---------|------------|
+| GET | `/api/admin/orders` | View all orders |
+| PUT | `/api/admin/orders/:id` | Update order status |
+
+---
+
+
+
 
